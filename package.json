@@ -2,9 +2,15 @@
   "name": "authql",
   "version": "0.0.1",
   "description": "Authentication service written in GraphQL (Apollo) and integrating with Neo4j",
-  "main": "src/index.js",
+  "main": "server/entry.js",
   "scripts": {
+    "dev": "nodemon -w server --exec \"babel-node server --presets es2015,stage-0\"",
+    "build": "babel server -s -D -d dist --presets es2015,stage-0",
     "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exandas/authql"
   },
   "keywords": [
     "GraphQL",
@@ -17,7 +23,16 @@
   "author": "Kostas Mamalis (@mamalisk)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.15.2",
     "graphql": "^0.9.1",
     "graphql-server-express": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "nodemon": "^1.9.2"
   }
 }
