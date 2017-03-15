@@ -1,0 +1,23 @@
+{
+  "name": "authql",
+  "version": "0.0.1",
+  "description": "Authentication service written in GraphQL (Apollo) and integrating with Neo4j",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "GraphQL",
+    "Apollo",
+    "Neo4j",
+    "Typescript",
+    "Auth0",
+    "OAuth2"
+  ],
+  "author": "Kostas Mamalis (@mamalisk)",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^0.9.1",
+    "graphql-server-express": "^0.6.0"
+  }
+}
