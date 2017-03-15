@@ -26,7 +26,9 @@
     "body-parser": "^1.13.3",
     "express": "^4.15.2",
     "graphql": "^0.9.1",
-    "graphql-server-express": "^0.6.0"
+    "graphql-server-express": "^0.6.0",
+    "neo4j": "^2.0.0-RC2",
+    "neo4j-driver": "^1.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
